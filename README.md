@@ -1,34 +1,113 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React-Dashboard
 
-## Getting Started
+![licence](https://img.shields.io/badge/licence-MIT-blue)
 
-First, run the development server:
+React Dashboard is an admin template dashboard based on React.
+
+![React-Dashboard](https://user-images.githubusercontent.com/32510139/181506432-dd67d4cc-31ae-40d6-8415-29b111e247b5.gif)
+
+
+## Table of Contents
+
+- [Tech Stack](#tech-stack)
+- [Quick Start](#quick-start)
+- [Run Locally](#run-locally)
+- [Deployment](#deployment)
+- [File Structure](#file-structure)
+- [Author](#author)
+- [License](#license)
+
+## Tech Stack
+
+**Frontend:** HTML5 / CSS3 / ReactJS
+
+## Quick start
+
+Clone the repo
 
 ```bash
-npm run dev
-# or
-yarn dev
+  git clone https://github.com/blaiti/React-Dashboard
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install React-Dashboard with npm
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+  cd React-Dashboard
+  npm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Run Locally
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To run locally, run the following command
 
-## Learn More
+```bash
+  npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To create a production build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+  npm run build
+```
 
-## Deploy on Vercel
+## File Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Within the download you'll find the following directories and files:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+React-Dashboard
+.
+├── package.json
+├── package_lock.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+└── src
+    ├── App.css
+    ├── App.jsx
+    ├── index.css
+    ├── index.jsx
+    ├── assets
+    │   ├── icons
+    │   │   ├── cancel.svg
+    │   │   ├── dashboard.svg
+    │   │   ├── done.svg
+    │   │   ├── logout.svg
+    │   │   ├── notification.svg
+    │   │   ├── product.svg
+    │   │   ├── refunded.svg
+    │   │   ├── settings.svg
+    │   │   ├── shipping.svg
+    │   │   └── user.svg
+    │   └── images
+    │       └── white-logo.png
+    ├── components
+    │   ├── DashboardHeader
+    │   │   ├── index.jsx
+    │   │   └── styles.css
+    │   └── SideBar
+    │       ├── index.jsx
+    │       ├── sidebar-item.jsx
+    │       └── styles.css
+    ├── constants
+    │   ├── orders.js
+    │   └── sidebar-menu.js
+    ├── pages
+    │   ├── Orders
+    │   │   └── index.jsx
+    │   └── styles.css
+    └── utils
+        └── table-pagination.js
+```
+
+## Author
+
+- [@blaiti](https://github.com/blaiti)
+
+## License
+
+[MIT](https://github.com/blaiti/React-Dashboard/blob/main/LICENSE)
